@@ -13,7 +13,19 @@ If you're using version control, you will want to check in this directory.
 
 ## Using
 
-_TODO_: Describe how to use your extension.
+Add to your YAML header of the document:
+```yaml
+filters: 
+  - remove_empty_headings
+```
+
+Or alternatively (experimental) in your `_quarto.yaml` for a website or book project.
+```yaml
+project:
+  pre-render:
+    remove_empty_headings.lua
+```
+
 
 ## Example
 
