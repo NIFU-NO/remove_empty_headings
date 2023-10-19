@@ -1,0 +1,33 @@
+---
+title: "Remove_empty_headings Example"
+filters:
+  - remove_empty_headings
+---
+
+## 1 H2 with text
+
+This heading has a paragraph.
+
+## 2 H2 with a table only
+
+
+| Col1 | Col2 |
+|------|------|
+| a    | b    |
+| c    | d    |
+
+## 3 Empty H2 to be removed
+
+
+## 4 H3 with no own contents, only child headings, not removed
+
+### 4.1 A non-empty H3
+Text
+
+### 4.2 Empty H3 to be removed
+
+# 2 New main heading
+```{r}
+## just a comment looking like a heading
+2+2
+```
